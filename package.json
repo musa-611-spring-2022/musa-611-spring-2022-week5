@@ -18,11 +18,13 @@
       "L": "readonly",
       "_": "readonly",
       "document": "readonly",
+      "fetch": "readonly",
       "htmlToElement": "readonly",
       "htmlToElements": "readonly"
     },
     "rules": {
       "arrow-parens": "off",
+      "dot-notation": "warn",
       "no-console": "off",
       "no-plusplus": "off",
       "no-multiple-empty-lines": "off",
