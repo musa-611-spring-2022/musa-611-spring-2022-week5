@@ -18,6 +18,8 @@ body {
 
 #school-list {
   overflow-y: auto;
+  width: 30vw;
+  padding-left: 2.5rem;
 }
 
 #school-filters {
@@ -29,3 +31,4 @@ body {
 #grade-level-select, #zip-code-select {
   min-width: 10rem;
 }
+
