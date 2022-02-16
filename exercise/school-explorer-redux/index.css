@@ -1,8 +1,8 @@
 body {
   display: grid;
   grid-template-areas:
-    "filters sorters"
-    "map     list";
+    "filters filters sorters nouse"
+    "map map   list list2";
   grid-template-rows: auto 1fr;
   grid-template-columns: auto auto;
   grid-gap: 1rem;
@@ -14,16 +14,32 @@ body {
 #school-filters { grid-area: filters; }
 #school-map { grid-area: map; }
 #school-sorters { grid-area: sorters; }
-#school-list { grid-area: list; }
+#school-list { grid-area: list2; }
+#HighLight-School { grid-area: list; }
 
-#school-list {
+#school-list,#HighLight-School {
   overflow-y: auto;
+  overflow-x: auto;
 }
 
 #school-filters {
   display: flex;
   gap: 1rem;
   align-items: center;
+}
+
+#school-map {
+  min-width: 50vw;
+  width: auto;
+}
+
+#school-list {
+  width: auto;
+  max-width: 50vw;
+}
+
+#HighLight-School {
+  width: auto;
 }
 
 #grade-level-select, #zip-code-select {
