@@ -2,7 +2,7 @@ body {
   display: grid;
   grid-template-areas:
     "filters filters sorters nouse"
-    "map map   list list2";
+    "map map list2 list2";
   grid-template-rows: auto 1fr;
   grid-template-columns: auto auto;
   grid-gap: 1rem;

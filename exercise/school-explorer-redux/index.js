@@ -44,6 +44,7 @@ let HighlightSchoolFunction = function (childArray) {
     let el2 = htmlToElement(`<li style="color:#CA263D;">${eachInfo}</li>`);
     HighLightSchool.appendChild(el2);
 });
+  document.querySelector('body').style.gridTemplateAreas='"filters filters sorters nouse"  "map map list list2"';
 }
 
 let showSchoolInfo = (school, marker) => {
@@ -51,7 +52,9 @@ let showSchoolInfo = (school, marker) => {
   fetch(dataUrl)
     .then(resp => resp.json())
     .then(data => {
-      let allGrades = data[-0];
+      // let allGrades = data[-0];
+      let allGrades = data
+        .filter( everyGrade => everyGrade['GradeLevel'] === "All Grades")[0];
       const sector = allGrades.Sector;
       const subSector = allGrades.SubSector;
       const grade = data
