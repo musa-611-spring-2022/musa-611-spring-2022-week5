@@ -4,7 +4,7 @@ body {
     "filters sorters"
     "map     list";
   grid-template-rows: auto 1fr;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto 30%;
   grid-gap: 1rem;
 
   padding: 1rem;
@@ -18,11 +18,17 @@ body {
 
 #school-list {
   overflow-y: auto;
-  width: 30vw;
-  padding-left: 2.5rem;
+  /* width: 30vw; */
+  /* padding-left: 2.5rem; */
 }
 
 #school-filters {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+#school-sorters{
   display: flex;
   gap: 1rem;
   align-items: center;
@@ -32,3 +38,47 @@ body {
   min-width: 10rem;
 }
 
+.leaflet-popup-content {
+  min-width: 300px;
+}
+.leaflet-popup-content table{
+  font-size: small;
+}
+
+.badge{
+  background-color: steelblue;
+  padding: 2px 4px;
+  margin: 2px 2px;
+}
+
+.card{
+  font-size: small;
+  margin-bottom: 10px;
+}
+
+.card p{
+  margin-bottom: 0;
+}
+
+.circle{
+  border-radius: 100px;
+  width: 10px;
+  height: 10px;
+  display:inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.legend {
+  background-color: #ffffffee;
+  padding: 10px;
+}
+
+.form-check-input:checked {
+  background-color: steelblue;
+  border-color: steelblue;
+}
+
+.card-text > a:any-link{
+  color: steelblue;
+}
