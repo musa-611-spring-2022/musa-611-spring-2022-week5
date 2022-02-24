@@ -29,3 +29,19 @@ body {
 #grade-level-select, #zip-code-select {
   min-width: 10rem;
 }
+
+.school-INTERVENE{
+  background-color: red;
+}
+
+.school-WATCH{
+  background-color: yellow;
+}
+
+.school-REINFORCE{
+  background-color: green;
+}
+
+.school-MODEL{
+  background-color: blue;
+}
