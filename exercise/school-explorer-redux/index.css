@@ -1,25 +1,24 @@
 body {
   display: grid;
   grid-template-areas:
-    "filters filters sorters nouse"
-    "map map list2 list2";
+    "filters sorters"
+    "map list2 ";
   grid-template-rows: auto 1fr;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto 0;
   grid-gap: 1rem;
 
   padding: 1rem;
   height: 100vh;
 }
 
-#school-filters { grid-area: filters; }
+#grade-level-select { grid-area: filters; }
+#zip-code-select { grid-area: filters; }
 #school-map { grid-area: map; }
-#school-sorters { grid-area: sorters; }
 #school-list { grid-area: list2; }
 #HighLight-School { grid-area: list; }
 
 #school-list,#HighLight-School {
   overflow-y: auto;
-  overflow-x: auto;
 }
 
 #school-filters {
@@ -29,19 +28,20 @@ body {
 }
 
 #school-map {
-  min-width: 50vw;
-  width: auto;
+  width: 50vw;
+  height: 90vh;
 }
 
 #school-list {
+  min-width: 27vw;
   width: auto;
-  max-width: 50vw;
 }
 
 #HighLight-School {
-  width: auto;
+  min-width: 20vw;
+  max-width: 35vw;
 }
 
 #grade-level-select, #zip-code-select {
-  min-width: 10rem;
+  width: 19vw;
 }
